@@ -7,6 +7,9 @@ COPY build.gradle .
 COPY gradle gradle
 COPY src src
 
+# Copy the gradlew script
+COPY gradlew .
+
 # Change permission on the gradlew script
 RUN chmod +x gradlew
 
